@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="@dimen/margin_20">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/margin_20" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/margin_20" />
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:color/holo_blue_dark" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_1"
+            app:srcCompat="@android:color/holo_purple" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:text="Title"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@id/gl_1"
+            app:layout_constraintTop_toBottomOf="@id/iv_2" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:text="Input field 1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/gl_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_1" />
+
+        <EditText
+            android:id="@+id/et_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:ems="10"
+            android:hint="value"
+            android:inputType="textPersonName"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_2"
+            app:layout_constraintEnd_toStartOf="@+id/gl_2"
+            app:layout_constraintStart_toEndOf="@id/tv_2" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:text="Input field 2"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/gl_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_2" />
+
+        <EditText
+            android:id="@+id/et_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="value"
+            android:inputType="textPersonName"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_3"
+            app:layout_constraintEnd_toStartOf="@+id/gl_2"
+            app:layout_constraintStart_toStartOf="@+id/et_1" />
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/body"
+            app:layout_constraintEnd_toEndOf="@id/gl_2"
+            app:layout_constraintStart_toStartOf="@id/gl_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_3" />
+
+        <Button
+            android:id="@+id/bt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:text="Save"
+            app:layout_constraintEnd_toStartOf="@id/bt_2"
+            app:layout_constraintTop_toBottomOf="@id/tv_4" />
+
+        <Button
+            android:id="@+id/bt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:text="Download"
+            app:layout_constraintEnd_toEndOf="@id/gl_2"
+            app:layout_constraintTop_toBottomOf="@id/tv_4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
