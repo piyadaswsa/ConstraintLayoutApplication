@@ -9,8 +9,6 @@ import kotlinx.android.synthetic.main.animation_first.*
 
 class AnimateActivity: AppCompatActivity() {
 
-    var set = false
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.animation_first)
